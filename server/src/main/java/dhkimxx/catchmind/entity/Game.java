@@ -5,6 +5,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.UUID;
@@ -14,6 +15,7 @@ import java.util.UUID;
 @Setter
 @Table(name="games")
 @Builder
+@ToString
 public class Game {
 
     @Id
